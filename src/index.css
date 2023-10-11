@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Orbitron:wght@400;700;900&display=swap");
 
 body {
-  background: url("../public/images/mainbg.jpeg");
+  background: url("../public/images/mainbg.jpg");
   background-size: cover;
   overflow-x: hidden;
 }
