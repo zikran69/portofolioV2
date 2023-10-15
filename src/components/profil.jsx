@@ -118,7 +118,10 @@ export default function Profil() {
                       <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
                         <h4 className="text-gradient">Express.js</h4>
                       </div>
-                      <p>i also work with this popular Framework</p>
+                      <p>
+                        i also work with this popular Framework for backend,
+                        Express.js
+                      </p>
                     </div>
                   </div>
                 </div>
