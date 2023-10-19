@@ -5,6 +5,7 @@ module.exports = {
     fontFamily: {
       primary: "Montserrat",
       secondary: "Orbitron",
+      third: "Roboto Slab",
     },
     extend: {
       colors: {

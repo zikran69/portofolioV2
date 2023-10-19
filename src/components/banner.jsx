@@ -4,7 +4,7 @@ export default function Banner() {
   return (
     <div
       id="home"
-      className="section container mx-auto mas-w-[1200px] px-3 items-center">
+      className="section container mx-auto mas-w-[1200px] px-3 mb-[100px] lg:mb-[20px] items-center">
       <div className="w-full">
         <div className="block text-center font-secondary font-black text-[30px]">
           Hello, I'm
