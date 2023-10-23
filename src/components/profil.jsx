@@ -1,5 +1,48 @@
 import React from "react"
 
+const skillData = [
+  {
+    image: "./images/1.png",
+    title: "JavaScript",
+    description: "My FullStack language",
+  },
+  {
+    image: "./images/5.png",
+    title: "TailwindCss",
+    description: "My Favorite Frontend Framework",
+  },
+  {
+    image: "./images/3.png",
+    title: "React.js",
+    description: "I usually work with React, almost all of my projects",
+  },
+  {
+    image: "./images/2.png",
+    title: "Node.js",
+    description: "I also build a backend system with Node.js",
+  },
+  {
+    image: "./images/4.png",
+    title: "PostgreSQL",
+    description: "I currently work with PostgreSQL for database projects",
+  },
+  {
+    image: "./images/6.png",
+    title: "Prisma",
+    description: "I also work with Prisma for frontend projects",
+  },
+  {
+    image: "./images/7.png",
+    title: "Express.js",
+    description: "also work with backend framework, Express.js",
+  },
+  {
+    image: "./images/8.png",
+    title: "VCS",
+    description: "use Git for version control, this helps me a lot",
+  },
+]
+
 export default function Profil() {
   return (
     <div id="profil" className="section">
@@ -27,122 +70,23 @@ export default function Profil() {
             </h2>
           </div>
 
-          <div className="w-full h-auto lg:pt-[10px] lg:ml-[30px]">
+          <div className="w-[300px] lg:w-full lg:h-auto lg:pt-[10px] ml-[100px] lg:ml-[30px]">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/1.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">JavaScript</h4>
+              {skillData.map((skill, index) => (
+                <div key={index} className="w-full">
+                  <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
+                    <img src={skill.image} alt="" />
+                    <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
+                      <div className="text-center w-full text-white">
+                        <div className="bg-white rounded-full px-2 mb-1 lg:px-5 lg:py-2 inline-block lg:mb-2">
+                          <h4 className="text-gradient ">{skill.title}</h4>
+                        </div>
+                        <p>{skill.description}</p>
                       </div>
-                      <p>My FullStack language</p>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/5.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">TailwindCss</h4>
-                      </div>
-                      <p>My Favorite Frontend Framework</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/3.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">React.js</h4>
-                      </div>
-                      <p>
-                        I usualy work with React, almost all of my projects{" "}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/2.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">Node.js</h4>
-                      </div>
-                      <p>i also build an banckend system with Node.js</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/4.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">PostgreeSQL</h4>
-                      </div>
-                      <p>
-                        i currently work with PostgreeSQL for database projects
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/6.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">Prisma</h4>
-                      </div>
-                      <p>i also work with Prisma for frontend projects</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/7.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">Express.js</h4>
-                      </div>
-                      <p>
-                        i also work with this popular Framework for backend,
-                        Express.js
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="w-full">
-                <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
-                  <img src="./images/8.png" alt="" />
-                  <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
-                    <div className="text-center w-full text-white">
-                      <div className="bg-white rounded-full px-5 py-2 inline-block mb-2">
-                        <h4 className="text-gradient">Version Control</h4>
-                      </div>
-                      <p>
-                        i currently work with Git for version control, this help
-                        me a lot.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
