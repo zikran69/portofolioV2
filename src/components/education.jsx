@@ -2,14 +2,33 @@ import React from "react"
 
 const certivicate = [
   {
-    title:"",
-    des:"",
+    title: "- Harisenin.co (Bootcamp). Jul-Dec,2023",
+    des: "Fullstack Web Developer, Relevant Course works: JavaScript, React.js, Node.js, Express.js, and any other fullstack framework.",
+  },
+  {
+    title:
+      "- Certificate of Competence : Learn to Build Backend Applications for Beginners (Dicoding Academy). Oct, 2023",
+    des: " Node.js Basics, Building Web Services using Node.js, Deploy Web Service (AWS Cloud), Consuming and Testing RESTful API using Postman",
+  },
+  {
+    title:
+      "- Certificate of Competence : Cloud Practitioner Essentials (Dicoding Academy). Oct, 2023",
+    des: "Introduction to Amazon Web Services, Cloud Computing, Global Infrastructure, Networking, Storage and Databases, Security, AWS Certified Cloud Practitioner Fundamentals",
+  },
+  {
+    title:
+      "- Certificate of Competence : JavaScript Programming Basics (Dicoding Academy). Oct, 2023",
+    des: "JavaScript Fundamentals, Data Structure, Function, Object-Oriented Programming, Functional Programming, Setup Environment, Node Package Manager, Error Handling, Concurrency, JavaScript Testing.",
+  },
+  {
+    title: "- Certificate of Competence : (Prakerja.) Jun, 2022",
+    des: "Learn to Create a Mobile App Using Flutter for IT Developer, and Flutter Application Programmer (Mobile Apps Developer).",
   },
 ]
 export default function Education() {
   return (
-    <div id="education" className="section ">
-      <div className="container mx-auto max-w-[1200px] p-2 lg:mb-[100px] lg:mt-[-80px]">
+    <div id="education" className="section lg:mb-[100px] lg:mt-[30px] ">
+      <div className="container mx-auto max-w-[1200px] p-2  ">
         <h4 className="text-secondary font-secondary font-semibold lg:text-[24px] text-center mb-[20px]">
           My Education Journey
         </h4>
@@ -25,69 +44,40 @@ export default function Education() {
               <li className="text-slate-600 lg:text-[15px]">
                 Indonesia Banking School (Jakarta)
               </li>
-              <li className="text-slate-600 lg:text-[15px]">Graduate in 2021</li>
+              <li className="text-slate-600 lg:text-[15px]">
+                Graduate in 2021
+              </li>
             </div>
-            <div className="font-semibold font-third m-2 my-[20px]">
+            <div className="font-semibold font-third m-2 my-[20px] ">
               <h6 className="text-blue-900 lg:text-[18px]">
                 Bachelor of Economic
               </h6>
               <li className="text-slate-600 lg:text-[15px]">
                 Trilogi University (Jakarta)
               </li>
-              <li className="text-slate-600 lg:text-[15px]">Graduate in 2015</li>
+              <li className="text-slate-600 lg:text-[15px]">
+                Graduate in 2015
+              </li>
             </div>
           </div>
 
           <div className="backdrop-blur-md bg-white/30 p-[24px] rounded-xl shadow-xl">
-            <div></div>
-            <h5 className="text-gradient font-secondary lg:text-[24px] font-semibold text-center">
+            <h5 className="text-gradient font-secondary lg:text-[24px] font-semibold text-center mb-4">
               Courses and Certifications
             </h5>
-
-            <div className="font-semibold font-third m-2 my-[20px] text-left">
-              <li className="text-blue-900 text-[18px]">
-                Harisenin.com (Bootcamp). Jul-Dec,2023
-              </li>
-              <p className="text-slate-600 text-[15px] ml-[25px] mb-2">
-                Fullstack Web Developer, Relevant Course works: JavaScript,
-                React.js, Node.js, Express.js, and any other fullstack
-                framework.
-              </p>
-              <li className="text-blue-900 text-[18px]">
-                Certificate of Competence Learn to Build Backend Applications
-                for Beginners (Dicoding Academy). Oct, 2023
-              </li>
-              <p className="text-slate-600 text-[15px] ml-[25px] mb-2">
-                Node.js Basics, Building Web Services using Node.js, Deploy Web
-                Service (AWS Cloud), Consuming and Testing RESTful API using
-                Postman
-              </p>
-              <li className="text-blue-900 text-[18px]">
-                Certificate of Competence Cloud Practitioner Essentials
-                (Dicoding Academy). Oct, 2023
-              </li>
-              <p className="text-slate-600 text-[15px] ml-[25px] mb-2">
-                Introduction to Amazon Web Services, Cloud Computing, Global
-                Infrastructure, Networking, Storage and Databases, Security, AWS
-                Certified Cloud Practitioner Fundamentals
-              </p>
-              <li className="text-blue-900 text-[18px]">
-                Certificate of Competence JavaScript Programming Basics
-                (Dicoding Academy). Oct, 2023
-              </li>
-              <p className="text-slate-600 text-[15px] ml-[25px] mb-2">
-                JavaScript Fundamentals, Data Structure, Function,
-                Object-Oriented Programming, Functional Programming, Setup
-                Environment, Node Package Manager, Error Handling, Concurrency,
-                JavaScript Testing.
-              </p>
-              <li className="text-blue-900 text-[18px]">
-                Certificate of Competence Prakerja Jun. 2022
-              </li>
-              <p className="text-slate-600 text-[15px] ml-[25px] mb-2">
-                Learn to Create a Mobile App Using Flutter for IT Developer, and
-                Flutter Application Programmer (Mobile Apps Developer).
-              </p>
+            <div className="grid grid-cols-auto gap-1 text-start group">
+              {certivicate.map((certivicate, index) => (
+                <div key={index} clsassName="w-full">
+                  <div className="font-semibold font-third lg:m-2 lg:my-[15px] text-left">
+                    <div className="text-blue-900 text-[15px] lg:text-[18px] justify-between lg:my-[5px] lg:mx-[17px]">
+                      {certivicate.title}
+                    </div>
+                    <p className="text-slate-500 text-[11px] lg:text-[15px] lg:ml-[25px] mb-2 lg:mb-[-15px] lg:my-[2px] lg:mx-[17px]">
+                      {certivicate.des}
+                    </p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
