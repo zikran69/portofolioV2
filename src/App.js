@@ -6,7 +6,6 @@ import Navigation from "./components/navigation"
 import Banner from "./components/banner"
 import Profil from "./components/profil"
 import Portfolio from "./components/portfolio"
-import Footer from "./components/footer"
 import Education from "./components/education"
 import "remixicon/fonts/remixicon.css"
 
@@ -22,7 +21,6 @@ function App() {
       <Profil />
       <Education />
       <Portfolio />
-      <Footer />
     </div>
   )
 }

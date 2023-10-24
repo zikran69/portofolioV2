@@ -11,22 +11,22 @@ const project = [
   {
     title: "Dashboard Admin",
     image: "./images/port2.png",
-    linkDemo: "",
-    linkCode: "",
+    linkDemo: "https://dashboard-admin-ver-2-react.vercel.app/",
+    linkCode: "https://github.com/zikran69/dashboard-admin-ver.2",
     des: "This web for admin dashboard, related to 'My Hotel' project, complete with backend system (API & DB) ",
   },
   {
     title: "Landing Page",
     image: "./images/port3.png",
-    linkDemo: "",
-    linkCode: "",
+    linkDemo: "https://joblos-jobseeker-assignment-react-hsb-8.vercel.app/",
+    linkCode: "https://github.com/zikran69/Assignment_React_HSB8",
     des: "Simply landing page for Job Seekers, build with react&tailwind",
   },
   {
     title: "Portfolio V1",
     image: "./images/port4.png",
-    linkDemo: "",
-    linkCode: "",
+    linkDemo: "https://portfolio-zikran.vercel.app/",
+    linkCode: "https://github.com/zikran69/PortfolioSaya",
     des: "My Firts Portfolio, build with HTML,CSS,JS only",
   },
 ]

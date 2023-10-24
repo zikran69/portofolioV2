@@ -1,5 +1,5 @@
-import React from "react";
-import { TypeAnimation } from "react-type-animation";
+import React from "react"
+import { TypeAnimation } from "react-type-animation"
 export default function Banner() {
   return (
     <div
@@ -26,7 +26,7 @@ export default function Banner() {
               className="ml-3 text-secondary"
             />
           </div>
-          <h4 className="font-primary font-normal">
+          <h4 className="font-primary font-normal text-[20px] lg:text-[35px] mt-4 lg:mt-[10px]">
             Welcome to my website, here you can see the information you need
             about me, I hope this website can help you and me in achieving the
             goals we hope for.
@@ -34,5 +34,5 @@ export default function Banner() {
         </div>
       </div>
     </div>
-  );
+  )
 }

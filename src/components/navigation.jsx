@@ -11,8 +11,9 @@ export default function Navigation() {
           activeClass="active"
           offset={-100}
           smooth={true}
-          spy={true}>
-          <i className="ri-arrow-up-circle-line"></i>
+          spy={true}
+          title="home">
+          <i className="ri-arrow-up-fill"></i>
         </Link>
         <Link
           to="profil"
@@ -20,8 +21,9 @@ export default function Navigation() {
           activeClass="active"
           offset={-100}
           smooth={true}
-          spy={true}>
-          <i className="ri-account-circle-line"></i>
+          spy={true}
+          title="profil">
+          <i className="ri-account-pin-circle-fill"></i>
         </Link>
         <Link
           to="education"
@@ -29,7 +31,8 @@ export default function Navigation() {
           activeClass="active"
           offset={-100}
           smooth={true}
-          spy={true}>
+          spy={true}
+          title="education">
           <i className="ri-graduation-cap-fill"></i>
         </Link>
         <Link
@@ -38,7 +41,8 @@ export default function Navigation() {
           activeClass="active"
           offset={-100}
           smooth={true}
-          spy={true}>
+          spy={true}
+          title="project">
           <i className="ri-code-s-slash-fill"></i>
         </Link>
       </div>

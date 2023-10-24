@@ -57,8 +57,8 @@ export default function Profil() {
           </h2>
         </div>
         <div className="flex flex-col lg:flex-row items-start justify-between">
-          <div className="text-center w-full max-w-[350px] mx-auto mb-[50px]">
-            <div className="min-w-[250px] min-h-[250px] bg-gradient pt-[50px]  rounded-full overflow-hidden">
+          <div className="text-center lg:w-full lg:max-w-[350px] mx-auto mb-[20px] lg:mb-[50px]">
+            <div className="lg:min-w-[250px] lg:min-h-[250px] bg-gradient pt-[50px] rounded-full overflow-hidden">
               <img
                 className="justify-cente w-full mt-[-50px] "
                 src="./images/profil.png"
