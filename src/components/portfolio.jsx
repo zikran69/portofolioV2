@@ -7,6 +7,8 @@ const project = [
     linkDemo: "https://f-pro-clientsite-v2-dktswwdb5-zikran-a.vercel.app",
     linkCode: "https://github.com/zikran69/client-dashboardV2",
     des: "This website build for booking hotel service, this also for client site who want to book hotel for his vacation or any related purpose",
+    aos: "flip-right",
+    aosDuration: 1500,
   },
   {
     title: "Dashboard Admin",
@@ -14,6 +16,8 @@ const project = [
     linkDemo: "https://dashboard-admin-ver-2-react.vercel.app/",
     linkCode: "https://github.com/zikran69/dashboard-admin-ver.2",
     des: "This web for admin dashboard, related to 'My Hotel' project, complete with backend system (API & DB) ",
+    aos: "flip-right",
+    aosDuration: 2000,
   },
   {
     title: "Landing Page",
@@ -21,6 +25,8 @@ const project = [
     linkDemo: "https://joblos-jobseeker-assignment-react-hsb-8.vercel.app/",
     linkCode: "https://github.com/zikran69/Assignment_React_HSB8",
     des: "Simply landing page for Job Seekers, build with react&tailwind",
+    aos: "flip-right",
+    aosDuration: 2500,
   },
   {
     title: "Portfolio V1",
@@ -28,14 +34,23 @@ const project = [
     linkDemo: "https://portfolio-zikran.vercel.app/",
     linkCode: "https://github.com/zikran69/PortfolioSaya",
     des: "My Firts Portfolio, build with HTML,CSS,JS only",
+    aos: "flip-right",
+    aosDuration: 3000,
   },
 ]
 
 export default function Portfolio() {
+  const globalOffset = 2 === 0 ? "-200" : "200"
+  const globalDelay = 200
+
   return (
     <div id="portfolio" className="section">
       <div className="container mx-auto max-w-[1200px] px-3 lg:mt-[-100px] lg:pb-20">
-        <div className="flex flex-col justify-between mb-[50px]">
+        <div
+          data-aos="fade-up"
+          data-aos-delay={globalDelay}
+          data-aos-duration="1000"
+          className="flex flex-col justify-between mb-[50px]">
           <h4 className="text-secondary font-secondary font-semibold text-[24px] text-center mb-2">
             Recent Work
           </h4>
@@ -47,13 +62,23 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="order-1 lg:order-2 text-center">
-          <div className="text-primary font-semibold font-primary max-w-[700px] mx-auto text-[30px] mb-[20px]">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            data-aos-delay={globalDelay}
+            className="text-primary font-semibold font-primary max-w-[700px] mx-auto text-[30px] mb-[20px]">
             My Projects :
           </div>
         </div>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
           {project.map((project, index) => (
-            <div key={index} className="w-full">
+            <div
+              key={index}
+              data-aos={project.aos}
+              data-aos-duration={project.aosDuration}
+              data-aos-offset={globalOffset}
+              data-aos-delay={globalDelay}
+              className="w-full">
               <div className="bg-white h-full w-full justify-center items-center flex rounded-lg overflow-hidden p-2 relative group">
                 <img src={project.image} alt="" />
                 <div className="absolute p-5 bg-primary w-full h-full flex items-center opacity-0 group-hover:opacity-100 transition">

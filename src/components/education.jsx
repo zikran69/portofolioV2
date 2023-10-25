@@ -26,14 +26,26 @@ const certivicate = [
   },
 ]
 export default function Education() {
+  const globalOffset = 2 === 0 ? "-200" : "200"
+  const globalDelay = 200
+
   return (
     <div id="education" className="section lg:mb-[100px] lg:mt-[30px] ">
       <div className="container mx-auto max-w-[1200px] p-2  ">
-        <h4 className="text-secondary font-secondary font-semibold lg:text-[24px] text-center mb-[20px]">
+        <h4
+          data-aos="fade-up"
+          data-aos-duration="2000"
+          data-aos-delay={globalDelay}
+          className="text-secondary font-secondary font-bold text-[22px] lg:text-[28px] text-center mb-[20px]">
           My Education Journey
         </h4>
         <div className="flex flex-col lg:flex-row jusstify-between gap-4 ">
-          <div className="backdrop-blur-md bg-white/30 p-[24px] rounded-xl shadow-xl">
+          <div
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            data-aos-offset={globalOffset}
+            data-aos-delay={globalDelay}
+            className="backdrop-blur-md bg-white/30 p-[24px] rounded-xl shadow-xl">
             <h5 className="text-gradient font-secondary lg:text-[24px] font-semibold text-center">
               Formal Education
             </h5>
@@ -61,7 +73,12 @@ export default function Education() {
             </div>
           </div>
 
-          <div className="backdrop-blur-md bg-white/30 p-[24px] rounded-xl shadow-xl">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            data-aos-offset={globalOffset}
+            data-aos-delay={globalDelay}
+            className="backdrop-blur-md bg-white/30 p-[24px] rounded-xl shadow-xl">
             <h5 className="text-gradient font-secondary lg:text-[24px] font-semibold text-center mb-4">
               Courses and Certifications
             </h5>
