@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const skillData = [
   {
@@ -57,11 +57,11 @@ const skillData = [
     aos: "flip-left",
     aosDuration: 3000,
   },
-]
+];
 
 export default function Profil() {
-  const globalOffset = 2 === 0 ? "-200" : "200"
-  const globalDelay = 200
+  const globalOffset = 2 === 0 ? "-200" : "200";
+  const globalDelay = 200;
 
   return (
     <div id="profil" className="section">
@@ -70,7 +70,7 @@ export default function Profil() {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay={globalDelay}
-          className="font-secondary text-center mb-10">
+          className="font-secondary text-center m-1 mb-10">
           <h4 className="text-secondary text-[20px] mb-3 font-bold">
             My Ability in Full Stack Developer Web
           </h4>
@@ -98,8 +98,8 @@ export default function Profil() {
             </h2>
           </div>
 
-          <div className="w-[300px] lg:w-full lg:h-auto lg:pt-[10px] ml-[100px] lg:ml-[30px]">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+          <div className="w-[300px] lg:w-full lg:h-auto lg:pt-[10px] ml-[30px] lg:ml-[30px]">
+            <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-4 text-center">
               {skillData.map((skill, index) => (
                 <div
                   key={index}
@@ -108,7 +108,7 @@ export default function Profil() {
                   data-aos-offset={globalOffset}
                   data-aos-delay={globalDelay}
                   className="w-full">
-                  <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-5 group">
+                  <div className="bg-white h-full justify-center items-center flex rounded-lg overflow-hidden relative p-3 lg:p-5 group">
                     <img src={skill.image} alt="" />
                     <div className="absolute p-5 backdrop-blur-xl bg-primary w-full h-full flex items-center opacity-0 scale-0 group-hover:scale-100 group-hover:opacity-100 transition ease-linear">
                       <div className="text-center w-full text-white">
@@ -126,5 +126,5 @@ export default function Profil() {
         </div>
       </div>
     </div>
-  )
+  );
 }
