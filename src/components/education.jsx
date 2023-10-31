@@ -2,7 +2,7 @@ import React from "react"
 
 const certivicate = [
   {
-    title: "- Harisenin.co (Bootcamp). Jul-Dec,2023",
+    title: "- Harisenin.com (Bootcamp). Jul-Dec,2023",
     des: "Fullstack Web Developer, Relevant Course works: JavaScript, React.js, Node.js, Express.js, and any other fullstack framework.",
   },
   {
