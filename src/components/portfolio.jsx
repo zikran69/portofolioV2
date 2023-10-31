@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const project = [
   {
@@ -37,15 +37,15 @@ const project = [
     aos: "flip-right",
     aosDuration: 3000,
   },
-]
+];
 
 export default function Portfolio() {
-  const globalOffset = 2 === 0 ? "-200" : "200"
-  const globalDelay = 200
+  const globalOffset = 2 === 0 ? "-200" : "200";
+  const globalDelay = 200;
 
   return (
-    <div id="portfolio" className="section">
-      <div className="container mx-auto max-w-[1200px] px-3 lg:mt-[-100px] lg:pb-20">
+    <div id="portfolio" className="section mb-[40px] ">
+      <div className="container mx-auto max-w-[1200px] px-3 lg:mt-[-100px] lg:pb-[20px]">
         <div
           data-aos="fade-up"
           data-aos-delay={globalDelay}
@@ -54,8 +54,7 @@ export default function Portfolio() {
           <h4 className="text-secondary font-secondary font-semibold text-[24px] text-center mb-2">
             Recent Work
           </h4>
-          <div className="text-gradient font-primary max-w-[700px] mx-auto lg:text-[24px] text-center">
-            {" "}
+          <div className="text-gradient font-primary max-w-[700px] mx-auto lg:text-[24px] text-center my-auto">
             Several projects that I created, while I was practicing Full Stack
             Web Developer, hopefully this can be a reference, you can also check
             my github page to see all full code.
@@ -70,7 +69,7 @@ export default function Portfolio() {
             My Projects :
           </div>
         </div>
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-2 text-center ">
           {project.map((project, index) => (
             <div
               key={index}
@@ -78,17 +77,17 @@ export default function Portfolio() {
               data-aos-duration={project.aosDuration}
               data-aos-offset={globalOffset}
               data-aos-delay={globalDelay}
-              className="w-full">
+              className="w-full pb-[10px]">
               <div className="bg-white h-full w-full justify-center items-center flex rounded-lg overflow-hidden p-2 relative group">
                 <img src={project.image} alt="" />
                 <div className="absolute p-5 bg-primary w-full h-full flex items-center opacity-0 group-hover:opacity-100 transition">
                   <div className="text-center w-full text-white lg:mt-[-60px] group-hover:mt-[0] transition-all">
-                    <div className="bg-white rounded-full px-5 inline-block mb-2">
+                    <div className="bg-white rounded-full px-2 mb-1 my-2  lg:px-5 inline-block mb-2">
                       <h4 className="text-gradient text-[12px] lg:text-[15px]">
                         {project.title}
                       </h4>
                     </div>
-                    <p className="text-[12px] lg:text-[15px]">{project.des}</p>
+                    <p className="text-[9px] lg:text-[15px]">{project.des}</p>
                     <div className="grid grid-cols-2 justify-center ">
                       <i
                         onClick={() => window.open(project.linkDemo, "_blank")}
@@ -107,5 +106,5 @@ export default function Portfolio() {
         </div>
       </div>
     </div>
-  )
+  );
 }
